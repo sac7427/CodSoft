@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    background-color: rgb(215, 215, 223);
+}
+
+.main {
+    width: 100%;
+    position: absolute;
+  
+}
+
+.nav {
+    height: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid;
+}
+
+.nav .logo img {
+    /* padding-top: 0px; */
+    height: 4.8vw;
+    width: 6vw;
+    border-radius: 3vw;
+}
+
+.nav2 {
+    display: flex;
+    font-size: 2vw;
+    padding-left: 1px;
+    
+}
+
+.nav2 ul {
+    /* display: inline-block; */
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4vw;
+    padding-left: 1vw;
+    /* align-items: center; */
+    
+    
+}
+
+.nav2 ul li {
+    list-style: none;
+    font-weight: bold;
+    /* border: 1px solid; */
+    padding: 1px;
+    border-radius: 4px;
+    background-color: #d7d7d7;
+    
+    /* background-color: rgb(8, 8, 48); */
+}
+
+.nav2 ul li a {
+    text-decoration: none;
+    color: rgb(14, 53, 227);
+    background-color: rgb(215, 215, 223);
+}
+
+
+
+.nav2 a:hover {
+    color: rgb(242, 8, 83);
+}
+
+
+
+
+
+
+
+.content {
+    padding-bottom: 0px;
+    display: flex;
+    position: relative;
+
+}
+
+.left {
+    width: 55%;
+    padding: 5vw;
+
+}
+
+.left h3 {
+    font-size: 4.5vw;
+    line-height: 4.5vw;
+    line-height: normal;
+}
+
+.left h3 span {
+    color: rgb(71, 132, 181);
+
+}
+.left h3 span::selection{
+    color: rgb(155, 6, 247);
+}
+
+.left p {
+    font-size: 1.7vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.left button {
+    font-size: 1.5vw;
+    padding: 1vw 2vw;
+    border-radius: 2vw;
+    border: none;
+    background-color: lightgreen;
+
+}
+
+.left button a {
+    text-decoration: none;
+    background-color: lightgreen;
+}
+
+.right {
+    /* height: 100%; */
+    width: 45%;
+
+    /* background-color: rgb(57, 41, 20); */
+}
+
+.right img {
+    padding: 40px 28px 0px 5px;
+    height: 40vw;
+    width: 40vw;
+}
+
+.about {
+    padding: 0vw 4vw 0vw 5vw;
+    text-align: left;
+
+    font-size: medium;
+}
+.about h2::selection{
+    color: rgb(23, 12, 238);
+}
+
+.about p {
+    font-size: 1.7vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    text-indent: 3vw;
+    padding: 0vw 1vw 1vw 2vw;
+}
+
+.about p span {
+    color: rgb(100, 71, 181);
+    font-weight: bold;
+
+}
+
+.about ul {
+    padding: 1vw 1vw 0vw 5vw;
+}
+
+.about ul li span {
+    color: rgb(71, 132, 181);
+    font-weight: bold;
+
+}
+
+.gallery-head {
+    /* font-size: larger; */
+    padding: 0vw 4vw 0vw 5vw;
+    text-align: left;
+    margin: 1vw;
+}
+
+.gallery-head::selection{
+    color: rgb(23, 12, 238);
+}
+.gallery ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 10vw;
+    width: 80vw;
+
+}
+
+.gallery li img {
+    height: 20vw;
+    width: 25vw;
+}
+
+.services {
+    padding: 0vw 4vw 0vw 7vw;
+    text-align: left;
+    font-size: medium;
+}
+.services h2::selection{
+    color: rgb(23, 12, 238);
+}
+.services ul{
+    padding: 1vw 1vw 1vw 5vw;
+
+}
+
+
+.services ul li span {
+    color: rgb(71, 132, 181);
+    font-weight: bold;
+
+}
+
+.services img {
+    width: 80vw;
+    height: 35vw;
+    padding: 2vw 3vw 0vw 1vw;
+    justify-content: center;
+}
+
+#contact {
+    margin: 4vw;
+}
+.contact h2::selection{
+    color: rgb(23, 12, 238);
+}
+
+.contact fieldset {
+    text-align: center;
+    margin: 2vw;
+}
+
+
+.contact fieldset form {
+    text-align: center;
+    /* font-size: 3vw; */
+}
+
+
+.contact textarea {
+    text-align: center;
+    /* padding-top: 19vw; */
+}
+#alert{
+    display: none;
+}
+
+footer {
+    /* background-color: aqua; */
+    /* padding: 30px; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.copyright {
+    /* background-color: rgb(197, 123, 123); */
+    text-align: center;
+    font-size: 2vw;
+}
+
+/* 
+@keyframes slider {
+    0% {
+        background-image: url(./cricket.webp);
+        background-size: 100% 100%;
+    }
+
+    16% {
+        background-image: url(./cycling.webp);
+        background-size: 100% 100%;
+    }
+
+    33% {
+        background-image: url(./football.webp);
+        background-size: 100% 100%;
+    }
+
+    50% {
+        background-image: url(./hocky.jpg);
+        background-size: 100% 100%;
+    }
+
+    66% {
+        background-image: url(./kabbadi.jpg);
+        background-size: 100% 100%;
+    }
+
+    83% {
+        background-image: url(./baseball.jpg);
+        background-size: 100% 100%;
+    }
+
+    100% {
+        background-image: url(./vollyball.jpg);
+        background-size: 100% 100%;
+    }
+    
+} */
+
+
+
+
+@media (max-width:690px) {
+
+    .nav {
+        background-color: rgb(220, 220, 218);
+        /* padding: 0px 5vw; */
+        height: 10vw;
+        border: 1vw;
+    }
+    .nav h2 a{
+        font-size: 0px;
+    }
+
+    .nav .logo img {
+        margin: 2.5vh;
+        height: 6vw;
+        width: 8vw;
+    }
+    .nav2{
+        font-size: 3vw;
+    }
+    .nav2 ul li a {
+        
+    background-color: #d7d7d7;
+    }
+
+    .content {
+        height: calc(100% - 61px);
+        flex-direction: column;
+
+        /* width: 100%; */
+        /* background-color: rgb(234, 234, 252); */
+    }
+
+    .content div {
+        width: 85vw;
+    }
+
+    .content div h3 {
+        font-size: 5vw;
+
+
+    }
+
+    .content p {
+        font-size: 3vw;
+    }
+
+    
+
+    .content button {
+        font-size: 2.5vw;
+    }
+
+    div .right {
+        margin-left: 6.5vw;
+    }
+
+    div .right img {
+
+        width: 100%;
+        justify-content: center;
+        height: 50vw;
+
+        border-radius: 2vw;
+
+        /* padding: 0px 30px 0px 1vw ; */
+        /* border: 1px solid; */
+        /* margin-left: 8vw; */
+        padding: 2px;
+
+
+
+
+    }
+    .about{
+        font-size: 3.5vw;
+    }
+
+    .about p {
+        font-size: 3vw;
+        
+    }
+
+    .about ul {
+        font-size: 3vw;
+        
+    }
+    .about h3{
+        font-size: 3vw;
+    }
+    .gallery-head{
+        font-size: 4vw;
+    }
+.services{
+    font-size: 3.5vw;
+}
+
+    .services ul {
+        font-size: 3vw;
+    }
+    .services img{
+        width: auto;
+    }
+
+    .contact input,label,textarea{
+        font-size: 3.1vw;
+    }
+    
+
+}

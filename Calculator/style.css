@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    /* background-color: #e3f9ff; */
+}
+
+body{
+    background: linear-gradient(rgb(159, 77, 159), rgb(69, 69, 215), aqua);
+    height: 100vh;
+}
+
+.heading{
+    text-align: center;
+    /* background: rgb(159, 77, 159); */
+    padding: 1vw;
+    font-size:3vw;
+    font-weight: bold;
+    color: rgb(18, 19, 19);
+}
+.heading span{
+    font-size: 1.5vw;
+    color: rgb(12, 13, 13);
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background-color: #3a4452;
+    padding: 1.9vw;
+    border-radius: 2vw;
+    border: 2.5px solid rgb(73, 205, 188);
+    /* background: linear-gradient(rgb(159, 77, 159), rgb(69, 69, 215), rgb(159, 77, 159)); */
+}
+
+
+
+.calculator form input {
+    border: 0;
+    outline: 0;
+    height: 35px;
+    width: 35px;
+    border-radius: 7px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(105, 101, 101, 0.2);
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    margin: 1vw;
+    font-size: 1.4vw;
+
+
+}
+
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1vw 0vw;
+
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 2vw;
+    border: 1px solid;
+    color: rgb(31, 216, 197);
+    /* box-shadow: none; */
+}
+
+form input.operator{
+    color: rgb(33, 215, 215);
+    font-weight: bolder;
+}
+@media(max-width:600px) {
+    .calculator form input {
+        font-size: 3vw;
+    }
+    form .display input{
+        font-size:3vw ;
+    }
+    .heading .name{
+        font-size: 6vw;
+    }
+.heading span{
+    font-size: 3vw;
+}
+body{
+    /* padding-top: 50vw; */
+    height: 100vh;
+    justify-content: center;
+}
+
+}

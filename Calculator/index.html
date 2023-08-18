@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Best Web Developer In Entire World">
+    <meta name="description" content="Created By Sachin">
+    <meta name="description" content="Calculator">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator By Sachin</title>
+</head>
+
+<body><div class="heading">
+    <div class="name">
+        Calculator
+    </div> <span>Created By Sachin</span></div>
+    <div class="container">
+
+       
+        <div class="calculator">
+            
+            <form>
+                <div class="display">
+                    <input type="text" name="display"  id="output" >
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="display.value=''" class="operator">
+                    <input type="button" value="DE" onclick="display.value=display.value.toString().slice(0,-1)" class="operator">
+                    <input type="button" value="%" onclick="display.value+='%'" class="operator">
+                    <input type="button" value="/" onclick="display.value+='/'" class="operator">
+
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="display.value+='7'" class="key">
+                    <input type="button" value="8" onclick="display.value+='8'" class="key">
+                    <input type="button" value="9" onclick="display.value+='9'" class="key">
+                    <input type="button" value="*" onclick="display.value+='*'" class="operator">
+
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="display.value+='4'" class="key">
+                    <input type="button" value="5" onclick="display.value+='5'" class="key">
+                    <input type="button" value="6" onclick="display.value+='6'" class="key">
+                    <input type="button" value="-" onclick="display.value+='-'" class="operator">
+
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="display.value+='1'" class="key">
+                    <input type="button" value="2" onclick="display.value+='2'" class="key">
+                    <input type="button" value="3" onclick="display.value+='3'" class="key">
+                    <input type="button" value="+" onclick="display.value+='+'" class="operator">
+
+                </div>
+                <div>
+                    <input type="button" value="0" onclick="display.value+='0'" class="key">
+                    <input type="button" value="00" onclick="display.value+='00'" class="key">
+                    <input type="button" value="." onclick="display.value+='.'" class="operator">
+                    <input type="button" value="=" onclick="calculate()" class="operator"
+                    id="re">
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
